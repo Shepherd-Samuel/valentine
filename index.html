@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Forever Valentine ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts-container" id="hearts-bg"></div>
+
+    <div class="main-card" id="mainCard">
+        <div class="slideshow-container" id="mediaContainer">
+            <div class="mySlides fade active">
+                <img src="assets/Image1.jpg" alt="Memory 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/image4.jpg" alt="Memory 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="assets/Image2.jpg" alt="Memory 3">
+            </div>
+            
+            <video id="valVideo" loop muted playsinline>
+                <source src="assets/vid.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="content" id="mainContent">
+            <h1 class="romantic-text">To My Most Beautiful...</h1>
+            
+            <div class="quote-container">
+                <p id="romantic-quote">"You are my today and all of my tomorrows."</p>
+            </div>
+
+            <p class="love-note">Every moment with you is a dream I never want to wake up from. You are my heart, my soul, and my everything.</p>
+            
+            <div class="question-box">
+                <h2 id="main-question">Will you be my Valentine?</h2>
+                <div class="buttons">
+                    <button class="btn yes-btn" id="yesButton" onclick="celebrate()">Yes, Always ❤️</button>
+                    <button class="btn no-btn" id="noButton" onmouseover="moveButton()" ontouchstart="moveButton()">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="collage-container" class="collage-hidden">
+        <img src="assets/Image1.jpg" class="collage-img p1">
+        <img src="assets/image3.jpg" class="collage-img p2">
+        <img src="assets/Image2.jpg" class="collage-img p3">
+    </div>
+
+    <audio id="romanticSong" loop>
+        <source src="assets/romantic_song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
