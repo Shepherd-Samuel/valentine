@@ -89,12 +89,13 @@ function celebrate() {
     content.innerHTML = `
         <h1 class="romantic-text" style="animation: fadeInEffect 2s;">YES! Forever Yours! ❤️</h1>
         <p class="love-note" style="color: white; font-size: 1.2rem;">
-            You've made me the happiest person in Machakos! <br>
-            Can't wait for our Valentine's date tomorrow.
+            You've made me the happiest person Today! <br>
+            Can't wait for our 1st Valentine's date.
         </p>
         <div style="font-size: 55px; margin-top: 10px; filter: drop-shadow(0 0 10px #ff4d6d);">💍🌹✨</div>
     `;
     
     document.getElementById('mainCard').style.boxShadow = "0 0 60px rgba(255, 77, 109, 0.7)";
     document.getElementById('noButton').style.display = 'none';
+
 }
