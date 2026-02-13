@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>My Forever Valentine ❤️</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="assets/Image1.jpg">
+    <link rel="preload" as="image" href="assets/image4.jpg">
+    <link rel="preload" as="image" href="assets/Image2.jpg">
+    <link rel="preload" as="video" href="assets/vid.mp4">
 </head>
 <body>
 
     <div class="hearts-container" id="hearts-bg"></div>
-
-    <div class="main-card" id="mainCard">
+    <div id="no-messages-container"></div> <div class="main-card" id="mainCard">
         <div class="slideshow-container" id="mediaContainer">
             <div class="mySlides fade active">
-                <img src="assets/Image1.jpg" alt="Memory 1">
+                <img src="assets/Image1.jpg" alt="Memory 1" loading="eager">
             </div>
             <div class="mySlides fade">
                 <img src="assets/image4.jpg" alt="Memory 2">
@@ -41,16 +44,16 @@
                 <h2 id="main-question">Will you be my Valentine?</h2>
                 <div class="buttons">
                     <button class="btn yes-btn" id="yesButton" onclick="celebrate()">Yes, Always ❤️</button>
-                    <button class="btn no-btn" id="noButton" onmouseover="moveButton()" ontouchstart="moveButton()">No</button>
+                    <button class="btn no-btn" id="noButton" onmouseover="handleNo()" onclick="handleNo()" ontouchstart="handleNo()">No</button>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="collage-container" class="collage-hidden">
-        <img src="assets/Image1.jpg" class="collage-img p1">
-        <img src="assets/image3.jpg" class="collage-img p2">
-        <img src="assets/Image2.jpg" class="collage-img p3">
+        <img src="assets/Image1.jpg" class="collage-img p1" loading="lazy">
+        <img src="assets/image3.jpg" class="collage-img p2" loading="lazy">
+        <img src="assets/Image2.jpg" class="collage-img p3" loading="lazy">
     </div>
 
     <audio id="romanticSong" loop>
